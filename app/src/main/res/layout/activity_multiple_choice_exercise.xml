@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ddavi.tpfinallp4.MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/respuesta_correcta"
+        android:visibility="invisible"
+        android:background="@drawable/respuesta_correcta" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/question_id"
+        android:text="Pregunta"
+        android:layout_above="@+id/respuesta_correcta"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radio_group"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_option"
+            android:text="Primera Opcion"
+            android:onClick="onClickRadioButton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/second_option"
+            android:text="Segunda Opcion"
+            android:onClick="onClickRadioButton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/third_option"
+            android:text="Tercera Opcion"
+            android:onClick="onClickRadioButton"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

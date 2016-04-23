@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/escuela">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pregunta"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:id="@+id/question_id"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/answer_id"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="@string/hintAnswer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            android:id="@+id/buttonNext"
+            android:layout_gravity="right"
+            android:onClick="onClickNext" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/colorPruple50Transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instrucciones:"
+            android:padding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/Instruction"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instrucciones"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:id="@+id/Instruction_description"/>
+    </LinearLayout>
+
+</FrameLayout>

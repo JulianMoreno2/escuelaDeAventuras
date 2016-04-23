@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gonzalo.escueladeaventuras.Activities.ExcerciseOrderActivity"
+    android:background="@drawable/escuela">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/words_id">
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:text="___________________________________________________"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/answer_space"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@color/colorPruple50Transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instrucciones:"
+            android:padding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@+id/Instruction"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Para resolver este ejercicio tienes que elegir las palabras en el orden que te parezca correcto.
+
+            ¡Suerte!"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:id="@+id/Instruction_description"/>
+
+    </LinearLayout>
+
+</FrameLayout>

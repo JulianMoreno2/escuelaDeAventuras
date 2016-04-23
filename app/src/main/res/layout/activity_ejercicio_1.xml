@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="@drawable/activity_background"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo se dice ROJO en inglés?"
+            android:id="@+id/escuelaDeAventurasTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#0f02ad"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:elegantTextHeight="false"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal" >
+
+            <RadioGroup
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0.33">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YELLOW"
+                    android:layout_margin="5dp"
+                    android:id="@+id/radioButton1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BLACK"
+                    android:layout_margin="5dp"
+                    android:id="@+id/radioButton2" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RED"
+                    android:layout_margin="5dp"
+                    android:id="@+id/radioButton3" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"
+                android:width="150dp"
+                android:height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/button_comenzar"
+                android:background="@drawable/button_background_1"
+                android:layout_centerHorizontal="true" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

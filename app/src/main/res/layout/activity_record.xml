@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:gravity="center_horizontal"
+        android:layout_gravity="top|center_horizontal"
+        android:text="Level Status"
+        android:textSize="26sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/textRecordPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Your Record"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:height="30dp"
+            android:textIsSelectable="false" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height= "wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/name_player"
+                android:text="Player"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/punctuation_player"
+                android:text="Punctuation"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/ranking_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Ranking"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height= "wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top">
+
+                <TextView
+                    android:id="@+id/name_col"
+                    android:text="Player"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/level_col"
+                    android:text="Level"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/punctuation_col"
+                    android:text="Punctuation"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.19"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:id="@+id/bMenu"
+                android:onClick="onButtonClick"
+                android:width="200dp"
+                android:height="50dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
